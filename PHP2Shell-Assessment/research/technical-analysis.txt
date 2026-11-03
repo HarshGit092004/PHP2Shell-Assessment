@@ -1,0 +1,43 @@
+PHP2Shell - Technical Analysis
+
+CVE-2026-109618
+Category: Out-of-memory corruption
+Mechanism:
+OOM interruption can leave request memory in an invalid state.
+Request cleanup may subsequently access invalid memory.
+
+CVE-2026-109619
+Category: Stale global state / Use-After-Free
+Mechanism:
+Request-owned memory may be freed while persistent worker state
+still references it. A subsequent request may consume stale state.
+
+Affected PHP branches:
+8.2.x before 8.2.35
+8.3.x before 8.3.36
+8.4.x before 8.4.27
+8.5.x before 8.5.12
+
+Local environment:
+PHP 8.2.12
+Apache 2.4.58
+SAPI: apache2handler
+Architecture: x64
+session.upload_progress.enabled: 1
+
+Assessment observations:
+The local configuration matches documented risk conditions.
+No vulnerability reproduction has been performed.
+HTTP fingerprinting is not exploit validation.
+
+PoC validation plan:
+1. Identify an authorized isolated vulnerable target.
+2. Record its PHP build and configuration.
+3. Establish a safe baseline.
+4. Validate expected behavior using an approved test procedure.
+5. Capture logs and document results.
+6. Compare against a patched build.
+
+Safety:
+Do not expose the local XAMPP server to the public internet.
+Do not execute exploit payloads against the everyday workstation.

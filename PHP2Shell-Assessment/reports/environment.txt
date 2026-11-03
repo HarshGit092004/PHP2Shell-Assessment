@@ -1,0 +1,14 @@
+PHP2Shell Assessment - Environment Fingerprint
+
+OS: Windows 10 Pro
+PHP: 8.2.12
+Apache: 2.4.58
+SAPI: apache2handler
+Architecture: x64
+Thread Safety: Enabled
+Memory Limit: 512M
+POST Max Size: 40M
+Upload Max Filesize: 40M
+Session Upload Progress: Enabled
+Python: 3.15.2
+Requests: 2.34.2
