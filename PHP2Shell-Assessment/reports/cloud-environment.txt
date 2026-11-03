@@ -1,0 +1,10 @@
+]633;E;echo "PHP2Shell Assessment - Cloud Environment";fc2a37d7-8811-4b68-b26c-999079648d4c]633;CPHP2Shell Assessment - Cloud Environment
+Tue Nov  3 10:10:52 UTC 2026
+PHP 8.4.27 (cli) (built: Oct 28 2026 18:54:26) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.4.27, Copyright (c) Zend Technologies
+    with Xdebug v3.5.3, Copyright (c) 2002-2026, by Derick Rethans
+memory_limit => 128M => 128M
+post_max_size => 8M => 8M
+upload_max_filesize => 2M => 2M
+session.upload_progress.enabled => On => On

@@ -1,0 +1,38 @@
+PHP2Shell Assessment - PoC Validation Results
+
+Test Date: 2026-11-03
+Target: http://127.0.0.1:8000/poc/test.php
+Environment: GitHub Codespaces
+PHP Version: 8.4.27
+PHP SAPI: cli-server
+Architecture: 64-bit
+
+Test 1: HTTP Connectivity
+Result: PASS
+HTTP Status: 200 OK
+
+Test 2: PHP Fingerprinting
+Result: PASS
+PHP Version: 8.4.27
+SAPI: cli-server
+Architecture: 64-bit
+
+Test 3: JSON Response Validation
+Result: PASS
+Content-Type: application/json
+Response Size: 106 bytes
+
+Test 4: Error Handling and Logging
+Result: Observed
+Connection failures against localhost:80 were logged.
+Successful requests against the Codespace endpoint were logged.
+
+Security Validation:
+No exploit payload was executed.
+No remote code execution was attempted or demonstrated.
+PHP 8.4.27 is a patched release for the assessed CVEs.
+
+Conclusion:
+The Python PoC successfully demonstrated safe HTTP
+connectivity, PHP fingerprinting, response validation,
+and logging. Vulnerability exploitation remains unverified.
